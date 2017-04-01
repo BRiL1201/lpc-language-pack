@@ -1,4 +1,4 @@
-# lpc-language-pack package
+# lpc-language-pack
 
 Custom Atom Editor HTML language primarily for my job. Customized syntax highlighting for inline style and class attributes, image tags, anchors tags, href and src attributes. Based on the language-html repository. Is meant as a replacement for the standard HTML grammar.
 
