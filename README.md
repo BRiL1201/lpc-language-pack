@@ -2,4 +2,7 @@
 
 Custom Atom Editor HTML language primarily for my job. Customized syntax highlighting for inline style and class attributes, image tags, anchors tags, href and src attributes. Based on the language-html repository. Is meant as a replacement for the standard HTML grammar.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+Currently has mostly hideous color scheme. Will straighten that out, and get it set for theme packages, as well.
+
+![Alt text](/screenshots/Screenshot1.PNG?raw=true "Headers and Stylesheet Colorings")
+![Alt text](/screenshots/Screenshot2.PNG?raw=true "Basic HTML Colorings")
