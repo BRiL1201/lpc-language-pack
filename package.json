@@ -1,10 +1,9 @@
 {
   "name": "lpc-language-pack",
   "main": "./lib/lpc-language-pack",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Custom Atom Editor HTML language for LPC employees. Customized syntax highlighting for inline style and class attributes, image tags, anchors tags, href and src attributes. Based on the language-html repository. Is meant as a replacement for the standard HTML grammar.",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "lpc-language-pack:toggle"
   },
@@ -19,6 +18,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
