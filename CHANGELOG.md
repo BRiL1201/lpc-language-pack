@@ -10,9 +10,5 @@
 ## 2.0.0 - Re-Initial Release
 * New to Git/GitHub - republished @ version 2 inadvertently, so I'm running with it.
 
-<<<<<<< HEAD
-## 1.0.0
-=======
 ## 1.0.0 - Initial Release
->>>>>>> origin/master
 * Every feature added
