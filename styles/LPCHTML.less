@@ -2,88 +2,28 @@
 
 //.lpc-language-pack {}
 
-.syntax--comment {
-  background-color: #d9d9e6;
-  color: #8000ff;
-  font-style: italic;
-  font-weight: bold;
+// Editor Background
+atom-text-editor {
+  background-color: black !important;
 }
 
-.syntax--LPCEBPReplacementTokens {
-  background-color: #8000ff;
-  color: #00ffff;
-  font-style: normal;
-  font-weight: bold;
-}
-
-.syntax--LPCEBPAutomatedTemplateReplacementTokens {
-  background-color: #ff0000;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: bold;
-}
-
-.syntax--LPCEBPItemTemplateTokens {
-  background-color: #ffff00;
-  color: #000000;
-  font-style: normal;
-  font-weight: bold;
-}
-
-.syntax--LPCCutAndPasteTokens {
-  background-color: #ff8200;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: bold;
-}
-
-.syntax--LPCNumbers {
-  color: #ff8200;
-  font-style: normal;
-  font-weight: bold;
-}
-
-// after getting it running right, i should be able to kill these two items as they'll be using CSS specs instead
-.syntax--StandardStyleAttributes {
-  color: #768356;
-  font-style: normal;
-}
-
-.syntax--StyleAttributes {
-  color: #768356;
-  font-style: normal;
-}
-
-// HTML Entities - things that start with an &
-.syntax--constant.syntax--character.syntax--entity.syntax--html {
-  font-weight: bold;
+// Editor Padding
+atom-text-editor .scroll-view {
+  padding: 2px;
 }
 
 // DOCTYPE
 .syntax--meta.syntax--tag.syntax--sgml.syntax--doctype.syntax--html {
   background-color: #3b393b;
-  color: #00ffff;
+  color: #4d94fe;
+  font-weight: bold;
 }
 
-// Hyperlinks
-.syntax--markup.syntax--underline.syntax--link.syntax--http.syntax--hyperlink {
-
-}
-
-// Normal Content
-.syntax--text.syntax--html.syntax--basic {
-  color: #8f8f8f;
-}
-
-// HTML Tag Attribute Name
-.syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
-  color: #00ffff;
-}
-
-// HTML Tag Attribute Value
-.syntax--string.syntax--quoted.syntax--double.syntax--html,
-.syntax--string.syntax--quoted.syntax--single.syntax--html {
-  color: #00c7c7;
+// HTML Document Structure Tags i.e. <body>
+.syntax--entity.syntax--name.syntax--tag.syntax--structure.syntax--any.syntax--html {
+  background-color: #3b393b;
+  color: #75acfe;
+  font-weight: bold;
 }
 
 // HTML Brackets
@@ -92,98 +32,161 @@
 .syntax--meta.syntax--scope.syntax--between-tags-pair.syntax--html,
 .syntax--punctuation.syntax--definition.syntax--tags.syntax--html,
 .syntax--punctuation.syntax--definition.syntax--tag.syntax--html {
-  color: #6ffb6c;
+  color: #c4dcff;
 }
 
 // HTML Tags
 .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--any.syntax--html,
+.syntax--punctuation.syntax--separator.syntax--key-value.syntax--html,
 .syntax--entity.syntax--name.syntax--tags.syntax--html {
-  color: #ff0080;
+  color: #0061f2;
   font-weight: bold;
 }
 
 // HTML DIV and other Block elements
+.syntax--meta.syntax--tag.syntax--block.syntax--any.syntax--html .syntax--punctuation.syntax--separator.syntax--key-value.syntax--html,
 .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--any.syntax--html {
-  color: #320de8;
-}
-
-// HTML Document Structure Tags i.e. <body>
-.syntax--entity.syntax--name.syntax--tag.syntax--structure.syntax--any.syntax--html {
-  background-color: #dafb6c;
-  color: #ff0000;
+  color: #0f98a6;
+  font-weight: bold;
 }
 
 // HTML table, th, tr, td Tags
+.syntax--source.syntax--table.syntax--embedded.syntax--html,
+.syntax--source.syntax--table.syntax--embedded.syntax--html .syntax--punctuation.syntax--separator.syntax--key-value.syntax--html,
 .syntax--source.syntax--table.syntax--embedded.syntax--html .syntax--entity.syntax--name.syntax--tag.syntax--style.syntax--html {
-  color: yellow;
+  color: #86e5ee;
+  font-weight: bold;
 }
 
 // HTML img Tag, Tag Callout, and Brackets
 .syntax--source.syntax--img.syntax--embedded.syntax--html,
+.syntax--source.syntax--img.syntax--embedded.syntax--html .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--html,
+.syntax--source.syntax--img.syntax--embedded.syntax--html .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--html,
+.syntax--source.syntax--img.syntax--embedded.syntax--html .syntax--punctuation.syntax--separator.syntax--key-value.syntax--html,
 .syntax--source.syntax--img.syntax--embedded.syntax--html .syntax--entity.syntax--name.syntax--tag.syntax--style.syntax--html,
 .syntax--source.syntax--img.syntax--embedded.syntax--html .syntax--punctuation.syntax--definition.syntax--tag.syntax--html,
 .syntax--source.syntax--img.syntax--embedded.syntax--html .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
-  background-color: #125b5b;
-  color: #00ff80;
+  background-color: #383838;
+  color: #5effaf;
 }
 
 // HTML a Tag, Tag Callout, Brackets, and Attributes
 .syntax--source.syntax--a.syntax--embedded.syntax--html,
+.syntax--source.syntax--a.syntax--embedded.syntax--html .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--html,
+.syntax--source.syntax--a.syntax--embedded.syntax--html .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--html,
+.syntax--source.syntax--a.syntax--embedded.syntax--html .syntax--punctuation.syntax--separator.syntax--key-value.syntax--html,
 .syntax--source.syntax--a.syntax--embedded.syntax--html .syntax--entity.syntax--name.syntax--tag.syntax--style.syntax--html,
 .syntax--source.syntax--a.syntax--embedded.syntax--html .syntax--punctuation.syntax--definition.syntax--tag.syntax--html,
 .syntax--source.syntax--a.syntax--embedded.syntax--html .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
-  background-color: #5e0c0c;
-  color: #ff0000;
+  background-color: #383838;
+  color: #d10000;
 }
 
 // HTML HREF Attributes
+.syntax--href.syntax--html .syntax--string.syntax--quoted.syntax--double.syntax--html .syntax--Numbers,
+.syntax--href.syntax--html .syntax--string.syntax--quoted.syntax--single.syntax--html .syntax--Numbers,
 .syntax--href.syntax--html .syntax--string.syntax--quoted.syntax--double.syntax--html,
 .syntax--href.syntax--html .syntax--string.syntax--quoted.syntax--single.syntax--html,
 .syntax--href.syntax--html .syntax--markup.syntax--underline.syntax--link.syntax--http.syntax--hyperlink {
-  color: #c4ff00;
+  color: #ff2600;
 }
 
 // HTML SRC Attributes
+.syntax--src.syntax--html .syntax--string.syntax--quoted.syntax--double.syntax--html .syntax--Numbers,
+.syntax--src.syntax--html .syntax--string.syntax--quoted.syntax--single.syntax--html .syntax--Numbers,
 .syntax--src.syntax--html .syntax--string.syntax--quoted.syntax--double.syntax--html,
 .syntax--src.syntax--html .syntax--string.syntax--quoted.syntax--single.syntax--html,
 .syntax--src.syntax--html .syntax--markup.syntax--underline.syntax--link.syntax--http.syntax--hyperlink {
-  color: #c4ff00;
+  color: #00ff19;
 }
 
-
-// ------------------- HTML Embedded CSS Styles, In-line Styles & Stylesheets -------------------
-
-// Style Attribute Standard Text
-.syntax--style {
-  color: #00ffff;
+// Comments
+.syntax--comment {
+  background-color: #d9d9e6;
+  color: #8000ff;
+  font-style: italic;
+  font-weight: bold;
 }
+
+// Numbers within HTML Tags, but not the Style Tag
+.syntax--string.syntax--quoted.syntax--double.syntax--html .syntax--Numbers,
+.syntax--string.syntax--quoted.syntax--single.syntax--html .syntax--Numbers {
+  color: #dc5bfe;
+  font-style: normal;
+  font-weight: bold;
+}
+
+// HTML Entities/Symbols
+.syntax--constant.syntax--character.syntax--entity.syntax--html {
+  color: #ae81ff;
+  font-style: italic;
+  font-weight: bold;
+}
+
+// HTML Tag Attribute Name
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--html,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--html,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+  color: #00a2f2;
+}
+
+// HTML Tag Attribute Value
+.syntax--string.syntax--quoted.syntax--double.syntax--html,
+.syntax--string.syntax--quoted.syntax--single.syntax--html {
+  color: #00c7c7;
+}
+
+// BEGIN: Standard Copy Formatting
+
+// Hyperlinks
+.syntax--markup.syntax--underline.syntax--link.syntax--http.syntax--hyperlink {
+  color: #b3b3b3;
+}
+
+// Normal Copy
+.syntax--text.syntax--html.syntax--basic {
+  color: #717070;
+}
+
+// Numbers
+.syntax--text.syntax--html.syntax--basic .syntax--Numbers {
+  color: #f5d3fe;
+}
+
+// END: Standard Copy Formatting
+
+// BEGIN: CSS, Inline Styles & Class Specs
 
 // Style Tag, Style & Class Attributes
 .syntax--entity.syntax--name.syntax--tag.syntax--style.syntax--html,
 .syntax--style.syntax--html,
-.syntax--class.syntax--html {
-  color: #93c762;
+.syntax--class.syntax--html,
+.syntax--style {
+  color: #ff8200;
+  font-weight: bold;
 }
 
-// CSS HTML Tag Name Style
+// CSS HTML Tag Name Style - Same as HTML Tag Color
 .syntax--entity.syntax--name.syntax--tag.syntax--css {
-  color: #619cb8;
+  color: #5492f0;
 }
 
 // CSS Pseduo-classes
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-class.syntax--css {
-  color: #2282e0;
+  color: #ffc588;
 }
 
-// CSS Class & Class Attribute Value
+// CSS Class Selectors & HTML Class Attribute Value
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css,
 .syntax--class {
-  color: #cdcbc2;
+  color: #d96d00;
+  font-weight: bold;
 }
 
-// CSS Class Other
+// CSS ID Selectors
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--css {
-  color: #81a9da;
+  color: #fe9d39;
+  font-weight: bold;
 }
 
 // CSS Property Name
@@ -196,13 +199,14 @@
 .syntax--keyword.syntax--other.syntax--unit.syntax--px.syntax--css,
 .syntax--keyword.syntax--other.syntax--unit.syntax--percentage.syntax--css,
 .syntax--LPCCSSUnits {
-  color: #b49600;
+  color: #9d8300;
+  font-weight: bold;
 }
 
 // CSS Property Value - Numeric
 .syntax--constant.syntax--numeric.syntax--css,
 .syntax--LPCCSSNumbers {
-  color: #ffdb7d;
+  color: #ffe398;
 }
 
 // CSS Property Value - Standard
@@ -211,12 +215,13 @@
 .syntax--support.syntax--constant.syntax--property-value.syntax--css,
 .syntax--punctuation.syntax--separator.syntax--list.syntax--comma.syntax--css,
 .syntax--InlineStylePropertyValue {
-  color: #00ffff;
+  color: #fcca47;
 }
 
 // CSS Property Value Important Flag
 .syntax--keyword.syntax--other.syntax--important.syntax--css {
-  color: #ff0000;
+background-color: #222222;
+  color: #c9522c;
 }
 
 // CSS Punctuation & Seperators
@@ -225,12 +230,14 @@
 .syntax--punctuation.syntax--definition.syntax--entity.syntax--css,
 .syntax--InlineCSSSeperators {
   color: #389e36;
+  font-weight: bold;
 }
 
 // CSS Terminator
 .syntax--punctuation.syntax--terminator.syntax--rule.syntax--css,
 .syntax--InlineCSSTerminators {
-  color: #fc0000;
+  color: #8ba44c;
+  font-weight: bold;
 }
 
 // CSS Brackets
@@ -252,14 +259,59 @@
   color: #b44f3d;
 }
 
+.syntax--punctuation.syntax--section.syntax--media.syntax--begin.syntax--bracket.syntax--curly.syntax--css,
+.syntax--punctuation.syntax--section.syntax--media.syntax--end.syntax--bracket.syntax--curly.syntax--css {
+  color: #b85442;
+  font-weight: bold;
+}
+
 // CSS Logical Operators
 .syntax--keyword.syntax--operator.syntax--logical.syntax--only.syntax--media.syntax--css,
 .syntax--keyword.syntax--operator.syntax--logical.syntax--and.syntax--media.syntax--css {
   color: #cdcbc2;
 }
 
-// CSS Parameters
+// CSS Parameter Brackets
 .syntax--punctuation.syntax--definition.syntax--parameters.syntax--begin.syntax--bracket.syntax--round.syntax--css,
 .syntax--punctuation.syntax--definition.syntax--parameters.syntax--end.syntax--bracket.syntax--round.syntax--css {
   color: #06ff01;
 }
+
+// END: CSS, Inline Styles & Class Specs
+
+// BEGIN: Proprietary Class Specs
+
+// EBP Replacement Tokens
+.syntax--LPCEBPReplacementTokens {
+  color: #422162;
+  background-color: #03ffff;
+  font-family: Tahoma;
+  font-size: 90%;
+  font-style: normal;
+  font-weight: bold;
+}
+
+// EBP Automated Template Replacement Tokens
+.syntax--LPCEBPAutomatedTemplateReplacementTokens {
+  background-color: #ff0000;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+}
+
+// EBP Automated Individual Item Template Replacement Tokens
+.syntax--LPCEBPItemTemplateTokens {
+  background-color: #ffff00;
+  color: #000000;
+  font-style: normal;
+  font-weight: bold;
+}
+
+// EBP Cut And Paste Item Tokens
+.syntax--LPCCutAndPasteTokens {
+  background-color: #ff8200;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+}
+// END: Proprietary Class Specs
