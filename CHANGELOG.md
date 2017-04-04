@@ -1,3 +1,6 @@
+## 2.4.0
+* Darkened background color of Anchor and Image tags
+
 ## 2.3.0
 * Fixed up Styles
 * Updated Screenshots
