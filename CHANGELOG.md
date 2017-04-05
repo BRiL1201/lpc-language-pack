@@ -1,3 +1,6 @@
+## 2.6.0
+* Updated CSS Class name for HTML tag numbers
+
 ## 2.4.0
 * Darkened background color of Anchor and Image tags
 
