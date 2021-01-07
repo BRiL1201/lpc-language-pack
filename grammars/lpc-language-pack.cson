@@ -883,7 +883,7 @@
     'name': 'LPCCutAndPasteTokens'
 
   'lpc-CSS-Units':
-    'match': '(%|cm|em|ex|in|mm|pc|pt|px|vh|vw|vmin)'
+    'match': '(%|ch|cm|em|ex|in|lh|mm|Q|pc|pt|px|rem|vh|vw|vmax|vmin)'
     'name': 'LPCCSSUnits'
 
   'lpc-CSS-Numbers':
