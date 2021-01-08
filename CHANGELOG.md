@@ -1,3 +1,6 @@
+## 2.8.0
+* Long overdue update for numerals on HTML Comments.
+
 ## 2.7.0
 * Updated grammar to handle Proprietary Cut&Paste tags more conveniently.
 
