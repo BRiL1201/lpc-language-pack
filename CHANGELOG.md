@@ -1,5 +1,5 @@
-## 2.8.0
-* Long overdue update for numerals on HTML Comments.
+## 2.9.0
+* Long overdue update for numerals on HTML Comments. Lightened the basic text to be a little easier to read on black backgrounds.
 
 ## 2.7.0
 * Updated grammar to handle Proprietary Cut&Paste tags more conveniently.
